@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/BBN">
+              <img src="/Bocci.png" alt="Bootstrap" width="100%" height="200">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/BBN">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/">Profile</a>
+                </li>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+  
+      <br>
+   <!-- <h4>
+          <div class="comment-header">
+             <div class="username">Username: <%= profile.username%></div>
+             <div class="rating">Name: <%= profile.name%></div>
+             <div class="rating">Birthplace: <%= profile.birthplace%></div>
+            <div class="rating">HomeClub: <%= profile.homeclub%></div>
+            <div class="rating">Tornaments: <%= profile.firsttournament%></div>
+            <div class="rating">Acolades: <%= profile.accolades%></div>
+            <div class="rating">Finishes: <%= profile.recentfinishes%></div>
+             <p class="comment-text">Recent Finish: <%= profile.recentfinishes%>
+             </p>
+          </div>
+   </h4>
+   -->
+  <form id="update">
+          <label class="input class="form-control"-group-text">Username</label class="input class="form-control"-group-text">
+          <input value='<%=profile.username%>' class="form-control" type="text" name="username" />
+         <br>
+          <label class="input class="form-control"-group-text">Name</label class="input class="form-control"-group-text">
+          <input value ="<%=profile.name%>"class="form-control" type="text" name="name" />
+         <br>
+          <label class="input class="form-control"-group-text">Birthplace</label class="input class="form-control"-group-text">
+          <input value="<%=profile.birthplace%>"class="form-control" type="text" name="birthplace" />
+         <br>
+          <label class="input class="form-control"-group-text">Homeclub</label class="input class="form-control"-group-text">
+          <input value="<%=profile.homeclub%>" class="form-control" type="text" name="homeclub"/>
+         <br>
+          <label class="input class="form-control"-group-text">Hometown</label class="input class="form-control"-group-text">
+        <input value="<%=profile.hometown%>" class="form-control" type="text" name="hometown"/>
+         <br>
+          <label class="input class="form-control"-group-text">First Tournament</label class="input class="form-control"-group-text">
+          <input value="<%=profile.firsttournament%>" class="form-control" type="text" name="firsttournament"/>
+         <br>
+          <label class="input class="form-control"-group-text"> Accolades</label class="input class="form-control"-group-text">
+          <input value="<%=profile.accolades%>" class="form-control" type="text" name="accolades"/>
+         <br>
+          <label class="input class="form-control"-group-text">Recent Finishes</label class="input class="form-control"-group-text">
+          <input value="<%=profile.recentfinishes%>" class="form-control" type="text" name="recentfinishes"/>
+          <br>
+          <button id="form_update" type="submit" value="<%=profile._id%>">Update</button>
+          <button id="form_delete" type="submit" value="<%=profile._id%>">Delete</button>
+       </form>
+        
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+
+  
+  <script src="/script.js"></script>
+</body>
+</html>
